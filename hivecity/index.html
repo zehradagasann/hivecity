@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şehir Etkinlikleri</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">HIVECITY</div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Ana Sayfa</a></li>
+                <li><a href="#eventsSection">Etkinlikler</a></li>
+                <li><a href="#clubsSection">Kulüpler</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <section class="slider-container">
+        <div class="slider">
+            <!-- Slider içeriği JavaScript ile doldurulacak -->
+        </div>
+        <div class="slider-controls">
+            <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="slider-dots">
+            <!-- Dots JavaScript ile doldurulacak -->
+        </div>
+    </section>
+
+    <section class="upcoming-events" id="eventsSection">
+        <h2 class="section-title animate__animated animate__fadeIn">Yaklaşan Etkinlikler</h2>
+        <div class="events-container">
+            <!-- Etkinlikler JavaScript ile doldurulacak -->
+        </div>
+    </section>
+
+    <section class="clubs" id="clubsSection">
+        <h2 class="section-title animate__animated animate__fadeIn">Kulüplerimiz</h2>
+        <div class="clubs-container">
+            <!-- Kulüpler JavaScript ile doldurulacak -->
+        </div>
+    </section>
+    <!-- In your HTML file, where you want social events to appear -->
+    <section class="social-events-section">
+        <h2 class="section-title">Sosyal Etkinlikler</h2>
+        <div class="social-events-container">
+            <!-- Social event cards will be dynamically inserted here -->
+        </div>
+    </section>
+
+    <!-- Harita Bölümü -->
+    <section class="map-section">
+        <h2 class="section-title animate__animated animate__fadeIn">Konum</h2>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3133.5504045157317!2d39.19384637678271!3d38.68156197242968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDQwJzUzLjYiTiAzOcKwMTEnNDUuOCJF!5e0!3m2!1str!2str!4v1650729845320!5m2!1str!2str" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Detay Modal -->
+    <div id="detailModal" class="modal">
+        <div class="modal-content animate__animated animate__zoomIn">
+            <span class="close-modal">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">HIVECITY</div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2025 HiveCity. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
